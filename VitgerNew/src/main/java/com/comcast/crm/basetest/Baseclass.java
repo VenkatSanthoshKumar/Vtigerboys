@@ -60,7 +60,7 @@ public class Baseclass {
 	public void configBc() throws Throwable {
 		// String BROWSER=browser;
 		String BROWSER = System.getProperty("browser",flib.getdatafrompropertyfile("browser"));
-		if (BROWSER.equals("firefox")) {
+		if (BROWSER.equals("1")) {
 			driver = new FirefoxDriver();
 		} else
 			driver = new ChromeDriver();
